@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Body Elements */
+
+#backgroundPrimary {
+  background-image: url(images/ppbackground.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#divHeader {
+  background-image: radial-gradient(
+    circle at top,
+    hsl(213, 19%, 26%),
+    hsl(216, 12%, 15%)
+  );
+}
+
+#quoteDisplay {
+  background-image: radial-gradient(
+    circle at bottom,
+    hsl(213, 19%, 30%),
+    hsl(216, 12%, 18%)
+  );
+  text-align: center;
+}
+
+#buttonQuote {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+}
+
+#buttonClicked {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+/* Typography */
+
+#backgroundPrimary {
+  font-family: "Overpass", sans-serif;
+}
+
+#headerGenerator,
+#quoteOwner,
+#buttonQuote {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+#buttonClicked {
+  font-weight: 700;
+  color: hsl(25, 97%, 53%);
+  text-align: center;
+}
+
+#headerContent {
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+#quote {
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  font-style: italic;
+  text-align: center;
+}
+
+#quoteOwner {
+  text-align: end;
+}
+
+#buttonQuote,
+#buttonClicked {
+  text-transform: uppercase;
+}
+
+/* Desktop Responsive Query */
+@media screen and (min-width: 769px) {
+  #divContainer {
+    max-width: 40%;
+    width: 30%;
+  }
+
+  #divHeader {
+    border-radius: 0.75em;
+    padding: 0.1em 1.25em;
+    box-shadow: 0.1em 0.15em 0.45em 0.15em rgba(50, 50, 50, 0.533);
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #quoteDisplay {
+    border-radius: 0.75em;
+    padding: 0.1em 1.25em;
+    box-shadow: 0.1em 0.15em 0.45em 0.15em rgba(50, 50, 50, 0.533);
+    max-width: 100%;
+    margin-top: 1em;
+  }
+
+  #buttonQuote {
+    padding: 0.2em 2em;
+    margin-bottom: 1em;
+    border-radius: 5vw;
+    box-shadow: 0 0.3em 0 0 #8888;
+  }
+
+  #buttonClicked {
+    padding: 0.1em 2em;
+    margin-bottom: 1em;
+    border-radius: 5vw;
+    box-shadow: 0 0.1em 0 0 #8888;
+  }
+
+  /* Typography */
+  #headerGenerator {
+    font-size: 1.5rem;
+  }
+
+  #headerContent {
+    font-size: 0.8rem;
+  }
+
+  #quote {
+    font-size: 1rem;
+  }
+
+  #quoteOwner {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Responsive Query */
+@media screen and (max-width: 768px) {
+  #divContainer {
+    max-width: 95%;
+    width: 75%;
+  }
+
+  #divHeader {
+    border-radius: 0.75em;
+    padding: 0.1em 0.75em;
+    max-width: 100%;
+    margin-bottom: 1.5em;
+    box-shadow: 0.1em 0.2em 0.5em 0.2em rgba(50, 50, 50, 0.533);
+  }
+
+  #quoteDisplay {
+    border-radius: 0.75em;
+    padding: 1.5em 1em;
+    box-shadow: 0.1em 0.2em 0.5em 0.2em rgba(50, 50, 50, 0.533);
+    max-width: 100%;
+    margin-top: 1.5em;
+  }
+
+  #buttonQuote {
+    padding: 0.5em 2em;
+    width: 60vw;
+    max-width: 70vw;
+    margin-bottom: 1em;
+    border-radius: 5em;
+    box-shadow: 0 0.3em 0 0 #8888;
+  }
+
+  #buttonClicked {
+    padding: 0.3em 2em;
+    width: 60vw;
+    max-width: 70vw;
+    margin-bottom: 1em;
+    border-radius: 5em;
+    box-shadow: 0 0.1em 0 0 #8888;
+  }
+
+  /* Typography */
+  #headerGenerator {
+    font-size: 1.5rem;
+  }
+
+  #headerContent {
+    font-size: 0.8rem;
+  }
+
+  #quote {
+    font-size: 1rem;
+  }
+
+  #quoteOwner {
+    font-size: 0.9rem;
+  }
+}
